@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+
+
+    <div class="wrap window-wrap section">
+
+        <a href="/" class="logo">
+            <img src="img/logo.svg" alt="Logo" class="theme__light">
+            <img src="img/logo_theme_dark.svg" alt="Logo" class="theme__dark">
+        </a>
+
+        <a href="/" class="back" id="back">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <div class="back-text">Назад</div>
+        </a>
+
+        <div class="window-wrap-title">Реєстрація</div>
+
+        <div class="register-select register-item active" data-item="0">
+
+            <div class="select-role">
+
+                <div class="role" data-role="2">
+                    <div class="inner">
+                        <img src="img/icons/role_1.svg" class="role-icon">
+                        <div class="role-title">Network</div>
+                    </div>
+                </div>
+                <div class="role" data-role="2">
+                    <div class="inner">
+                        <img src="img/icons/role_2.svg" class="role-icon">
+                        <div class="role-title">Media Buying</div>
+                    </div>
+                </div>
+                <div class="role" data-role="1">
+                    <div class="inner">
+                        <img src="img/icons/role_3.svg" class="role-icon">
+                        <div class="role-title">Solo</div>
+                    </div>
+                </div>
+                <div class="role" data-role="2">
+                    <div class="inner">
+                        <img src="img/icons/role_4.svg" class="role-icon">
+                        <div class="role-title">Other</div>
+                    </div>
+                </div>
+
+            </div> <!-- select-role -->
+        </div> <!-- register-select -->
+
+        <div class="register-solo register-item" data-item="1">
+
+            <div class="register-form form">
+                <form action="">
+                    <input type="text" placeholder="Ваше ім’я">
+                    <input type="text" placeholder="E-mail">
+                    <input type="password" placeholder="Пароль" value="">
+                    <input type="password" placeholder="Пароль ще раз">
+
+                    <button type="submit" class="btn btn-dark">Зареєструватися</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="register-team register-item" data-item="2">
+            <div class="register-form form">
+                <form action="">
+                    <input type="text" placeholder="Ваше ім’я">
+                    <input type="text" placeholder="Telegram або Skype">
+
+                    <button type="submit" class="btn btn-dark">Зареєструватися</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div> <!-- wrap -->
+
+
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

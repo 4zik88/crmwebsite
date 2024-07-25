@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Api</title>
+</head>
+
+<body>
+
+
+
+    <div class="wrap header-wrap">
+        <div class="header">
+            <div class="header-body container wrap">
+
+                <a href="/" class="logo">
+                    <img class="theme__light" src="img/logo.svg" alt="Logo">
+                    <img src="img/logo_theme_dark.svg" alt="Logo" class="theme__dark">
+                </a>
+                <div class="theme-switcher">
+                    <div class="theme-switcher-item theme-light-item active" data-theme="light"><img
+                            src="img/icons/sun.svg"></div>
+                    <div class="theme-switcher-item theme-dark-item" data-theme="dark"><img src="img/icons/moon.svg">
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="/price.html">Прайс</a></li>
+                        <li class="dropdown">
+                            <a href="">Новини</a>
+                            <ul class="submenu">
+                                <li><a href="/blog.html">
+                                        <img src="img/icons/blog.svg" class="item__icon">
+                                        <span class="text">Блог</span></a></li>
+                                <li><a href="/update.html">
+                                        <img src="img/icons/update.svg" class="item__icon">
+                                        <span class="text">Оновлення</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">База знань</a>
+                            <ul class="submenu">
+                                <li><a href="/advice.html">
+                                        <img src="img/icons/advice.svg" class="item__icon">
+                                        <span class="text">Поради та документація</span></a></li>
+                                <li><a href="/api.html">
+                                        <img src="img/icons/api.svg" class="item__icon">
+                                        <span class="text">API Doc</span></a>
+                                </li>
+                                <li><a href="/program.html">
+                                        <img src="img/icons/money.svg" class="item__icon">
+                                        <span class="text">Реферальна програма</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/contacts.html">Зв’язатися з нами</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <div class="lang-current lang-item">
+                        <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </div>
+                    <div class="lang-list">
+                        <a href="" class="lang-item lang-current">
+                            <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">UA</span>
+                        </a>
+                        <a href="" class="lang-item">
+                            <img src="img/icons/usa.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">EN</span>
+                        </a>
+                        <a href="" class="lang-item">
+                            <img src="img/icons/ru.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">UA</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/register.html" class="btn btn-dark register-btn">Реєстрація</a>
+
+                <div class="mobile-btn"></div>
+
+            </div> <!-- header-body -->
+
+            <!-- mobile menu -->
+            <div class="mobile-wrap">
+                <div class="mobile-body">
+                    <nav class="nav mobile-nav">
+                        <ul class="mobile-menu menu">
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li class="dropdown">
+                                <a href="">Новини</a>
+                                <ul class="submenu">
+                                    <li><a href="/blog.html">
+                                            <img src="img/icons/blog.svg" class="item__icon">
+                                            <span class="text">Блог</span></a></li>
+                                    <li><a href="/update.html">
+                                            <img src="img/icons/update.svg" class="item__icon">
+                                            <span class="text">Оновлення</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="">База знань</a>
+                                <ul class="submenu">
+                                    <li><a href="/advice.html">
+                                            <img src="img/icons/advice.svg" class="item__icon">
+                                            <span class="text">Поради та документація</span></a></li>
+                                    <li><a href="/api.html">
+                                            <img src="img/icons/api.svg" class="item__icon">
+                                            <span class="text">API Doc</span></a>
+                                    </li>
+                                    <li><a href="/program.html">
+                                            <img src="img/icons/money.svg" class="item__icon">
+                                            <span class="text">Реферальна програма</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/contacts.html">Зв’язатися з нами</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- mobile-wrap -->
+            <!-- mobile menu -->
+
+        </div><!-- header -->
+    </div> <!-- wrap -->
+
+
+    <div class="breadcrumbs-container">
+        <div class="breadcrumbs wrap container">
+            <ul>
+                <li><a href="">Головна</a></li>
+                <li>Прайс</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="t" style="overflow: hidden; width: 100%;">
+
+        <div class="docs wrap section container">
+
+            <div class="advice-nav">
+                <div class="advice-nav-inner">
+                    <div class="mobile__title">Навігація</div>
+                    <div class="advice-nav-content">
+
+                        <ul class="advice-nav-list">
+                            <li class="dropdown">
+                                <a href="">Розділи CRM</a>
+                                <ul class="submenu">
+                                    <li><a href="">Dashboard</a></li>
+                                    <li><a href="">Caps</a></li>
+                                    <li><a href="">Statistic</a></li>
+                                    <li class="has-children">
+                                        <a href="">Leads</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Перенадсилання ліда</a></li>
+                                            <li><a href="">Параметри ліда</a></li>
+                                            <li><a href="">Масове редагування лідів</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="">Розділи CRM</a>
+                                <ul class="submenu">
+                                    <li><a href="">Dashboard</a></li>
+                                    <li><a href="">Caps</a></li>
+                                    <li><a href="">Statistic</a></li>
+                                    <li class="has-children">
+                                        <a href="">Leads</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Перенадсилання ліда</a></li>
+                                            <li><a href="">Параметри ліда</a></li>
+                                            <li><a href="">Масове редагування лідів</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="">Розділи CRM</a>
+                                <ul class="submenu">
+                                    <li><a href="">Dashboard</a></li>
+                                    <li><a href="">Caps</a></li>
+                                    <li><a href="">Statistic</a></li>
+                                    <li class="has-children">
+                                        <a href="">Leads</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Перенадсилання ліда</a></li>
+                                            <li><a href="">Параметри ліда</a></li>
+                                            <li><a href="">Масове редагування лідів</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="">Розділи CRM</a>
+                                <ul class="submenu">
+                                    <li><a href="">Dashboard</a></li>
+                                    <li><a href="">Caps</a></li>
+                                    <li><a href="">Statistic</a></li>
+                                    <li class="has-children">
+                                        <a href="">Leads</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Перенадсилання ліда</a></li>
+                                            <li><a href="">Параметри ліда</a></li>
+                                            <li><a href="">Масове редагування лідів</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="telegram-nav nav__item">
+                            <img src="img/icons/telegram_big.svg">
+                            <div class="text">Дізнавайтесь новини першими</div>
+                        </div>
+                        <div class="notice-nav nav__item">
+                            <img src="img/icons/money.svg">
+                            <div class="text">Заробляйте до 15% завдяки реферальній програмі</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- advice-nav -->
+
+            <div class="docs-content">
+
+                <div class="page-title">
+                    <h1>API Doc</h1>
+                </div>
+
+                <div class="docs-row">
+
+                    <div class="docs-text docs-item">
+
+                        <div class="docs-section">
+                            <div class="item__title section__title"><span>POST</span> Push Leads (Registration method)
+                            </div>
+                            <div class="item__link section__item">
+                                <div class="link-string">https://platform.yourdomain.com/api/signup/procform</div>
+
+                                <svg class="copy__link" width="33" height="33" viewBox="0 0 33 33"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="33" height="33" fill="url(#pattern0_91_28)" fill-opacity="0.64" />
+                                    <defs>
+                                        <pattern id="pattern0_91_28" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_91_28" transform="scale(0.0104167)" />
+                                        </pattern>
+                                        <image id="image0_91_28" width="96" height="96"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADUElEQVR4nO2czWoUURCFe6GuxIX6AuLPQhREtyr+gk/gw7jXjfi70ahbNwHn1iTqTgc3IcnUmYwwStBH0AQk7hRGOkZQcNEzc7ur7u1zoHahc/t8t6pudw1dFBRFURTlSN1+/6oATwOwHlS/CzCOFZXXAFwr2qbOcHgsqL6Lafi0AHb+/mbRFglwPqhu1mn+FADKuF20ZOdv1m3+lADyhxCAt02YPwOAcVC9W2TccMfeAWSbCaL6LCEA+WVCANZTApBdJojqVoIA8skEadD8mACygSAJA8gCgiQOIHkIkgGApCFIJgCShSAZAUgSgmQGIDkIkiGAbQjArSIFSaYAykhiqCNOAbRGQgD1zHAJwHiGW/UawgyoZ4ZLAMYzXK8ZMD8a7S1SV5WfjngFEPr9C0UbZrheAYjqQpGyytNO0gCw/argRpH7DNczAPkdi6J6MbmeUHWGmwCAcRMRH0DkfywOTCIA2BvFDECewRIEAmAPiKnYqScOygRLEOyNYg9AnhG1/LAEgQDEwa5mBsDeWJYg2JvLHgD/wSYMAuCDWEzFTj1xUCZYgmBvFHsA8oyo5YclCAQgDnY1MwD2xrIEwd5c9gD4DzZhEAAfxGIqduqJgzLBEgR7o9gDkGdELT8sQSAAcbCrk8iA+dFoj8dPlkmDEYBvZgA6KysHPH60T5oM1Y9mAILqyYoAnmSbAaqPzAB0VK9Xut5gcMXaqLqiq3rJDEBQvVP1mgF4Y21WDdGLbv6EAN5XvebiYHBUgA0HpsWKrx3Vw6YAtmMwOF71ukH1XCYQSvPP1mL+pAAm/XRXFzjS5JfUY0dZSmvb+X800aJUt6oeR/9WAC4LMFce41w/J6huBdUPovq4lob7P02xKx40srC2aAoAPxZUT1uvOxtNVRtVP79eXt5nvfYsNEODetnr9XZZrz95zdi4ns+p7ra+h6QV4fTwiuVoBsU4vgXVTwE4M8s6WquI5+ifovpwQfWg9T21FcB4JxvK74zee7G6esL63loJQP6FMQrA/fJVdlhbOzW/tLS/6mStNaoTgDiIwrtcv5uBwxlubHGGayzOcI3FGa4DcYZrrO5weCgAX6ybpsSLjXIaV6QkznAdiDNcJ+IMl6IoiqKKifULYb/V+F+t2SYAAAAASUVORK5CYII=" />
+                                    </defs>
+                                </svg>
+                            </div> <!-- item__link -->
+                            <div class="headers__item section__item">
+                                <div class="headers__item_title section__subtitle">Headers</div>
+                                <div class="headers__content">
+                                    <div class="headers__row">
+                                        <div class="name">x-trackbox-username</div>
+                                        <div class="value">username</div>
+                                    </div>
+                                    <div class="headers__row">
+                                        <div class="name">x-trackbox-password</div>
+                                        <div class="value">password</div>
+                                    </div>
+                                    <div class="headers__row">
+                                        <div class="name">x-api-key</div>
+                                        <div class="value">2643889w34df345676ssdas323tgc738</div>
+                                    </div>
+                                    <div class="headers__row">
+                                        <div class="name">Content-Type</div>
+                                        <div class="value">application/json</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body__item section__item">
+                                <div class="section__subtitle">Body <span>raw</span></div>
+                                <div class="body__content more__content">
+                                    <div class="body__icons">
+                                        <svg class="text-wrap">
+                                            <use xlink:href="img/icons/sprite.svg#wrap"></use>
+                                        </svg>
+                                        <svg class="copy">
+                                            <use xlink:href="img/icons/sprite.svg#copy"></use>
+                                        </svg>
+                                    </div>
+                                    <code class="code">
+                                    <div class="quotes top">{</div>
+                                        <div class="code-row">
+                                            <span class="red">"ai"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ci"</span>: <span class="green">"1",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"gi"</span>: <span class="green">"29.249.50.83",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"userip"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"firstname"</span>: <span class="green">"Gnanapiasam",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ai"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ci"</span>: <span class="green">"1",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"gi"</span>: <span class="green">"29.249.50.83",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"userip"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"firstname"</span>: <span class="green">"Gnanapiasam",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ai"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ci"</span>: <span class="green">"1",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"gi"</span>: <span class="green">"29.249.50.83",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"userip"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"firstname"</span>: <span class="green">"Gnanapiasam",</span>
+                                        </div>
+                                    <div class="quotes bottom">{</div>
+                                        
+                                    </code>
+
+                                    <div class="view-more">View more</div>
+
+                                </div> <!-- body__content -->
+                            </div>
+                        </div> <!-- docs-section -->
+
+                    </div> <!-- docs-item -->
+
+                    <div class="docs-example docs-item">
+                        <div class="docs-dark">
+                            <div class="docs-dark-section">
+                                <div class="docs-dark-block">
+                                    <div class="docs-dark-title">
+                                        <div class="item__title">Example Request</div>
+                                        <div class="switcher">
+                                            <div class="switcher-title">Push leads (registration mrthod)</div>
+                                            <div class="switcher-list">
+                                                <div class="switcher-list-item active" data-item="1">Push leads
+                                                    (registration
+                                                    mrthod)
+                                                </div>
+                                                <div class="switcher-list-item" data-item="2">Pull leads</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="body__content block__content more__content active" data-item="1">
+                                        <div class="body__content_row">
+                                            <div class="body__content_label">curl</div>
+                                            <div class="body__icons">
+                                                <svg class="text-wrap">
+                                                    <use xlink:href="img/icons/sprite.svg#wrap"></use>
+                                                </svg>
+                                                <svg class="copy">
+                                                    <use xlink:href="img/icons/sprite.svg#copy"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <code class="code">
+                                    <div class="quotes top">{</div>
+                                        <div class="code-row">
+                                            <span class="red">"ai"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ci"</span>: <span class="green">"1",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"gi"</span>: <span class="green">"29.249.50.83",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"userip"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"firstname"</span>: <span class="green">"Gnanapiasam",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ai"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ci"</span>: <span class="green">"1",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"gi"</span>: <span class="green">"29.249.50.83",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"userip"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"firstname"</span>: <span class="green">"Gnanapiasam",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ai"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"ci"</span>: <span class="green">"1",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"gi"</span>: <span class="green">"29.249.50.83",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"userip"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                        </div>
+                                        <div class="code-row">
+                                            <span class="red">"firstname"</span>: <span class="green">"Gnanapiasam",</span>
+                                        </div>
+                                    <div class="quotes bottom">{</div>
+                                                                    
+                                  </code>
+
+                                        <div class="view-more">View more</div>
+
+                                    </div> <!-- body__content -->
+                                    <div class="body__content block__content" data-item="2">
+                                        <div class="body__content_row">
+                                            <div class="body__content_label">curl</div>
+                                            <div class="body__icons">
+                                                <svg class="text-wrap">
+                                                    <use xlink:href="img/icons/sprite.svg#wrap"></use>
+                                                </svg>
+                                                <svg class="copy">
+                                                    <use xlink:href="img/icons/sprite.svg#copy"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <code class="code">
+                                        <div class="quotes top">{</div>
+                                            <div class="code-row">
+                                                <span class="red">"ai"</span>: <span class="green">"ask from your trackbox partner",</span>
+                                            </div>
+                                            <div class="code-row">
+                                                <span class="red">"ci"</span>: <span class="green">"1",</span>
+                                            </div>
+                                            <div class="code-row">
+                                                <span class="red">"gi"</span>: <span class="green">"29.249.50.83",</span>
+                                            </div> 
+                                        <div class="quotes bottom">{</div>
+                                                                        
+                                        </code>
+                                    </div> <!-- body__content -->
+
+                                </div> <!-- docs-dark block -->
+
+                                <div class="docs-dark-block">
+                                    <div class="docs-dark-title">Example Response</div>
+                                    <div class="tab__titles">
+                                        <div class="tab__title active" data-item="1">Body</div>
+                                        <div class="tab__title" data-item="2">Headers (<span>0</span>)</div>
+                                    </div>
+
+                                    <div class="tab__items">
+
+                                        <div class="tab__item body__content empty active" data-item="1">
+                                            <div class="empty-title">No response body</div>
+                                            <div class="empty-string">This request doesn't return any response body
+                                            </div>
+                                        </div> <!-- tab__item body__content -->
+
+                                        <div class="tab__item body__content empty" data-item="2">
+                                            <div class="empty-title">No response headers</div>
+                                            <div class="empty-string">This request doesn't return any response headers
+                                            </div>
+                                        </div> <!-- tab__item body__content -->
+
+                                    </div> <!-- tab__items -->
+                                </div> <!-- docs-dark-block -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- docs -->
+
+    </div> <!-- t -->
+
+
+
+    <div class="wrap container">
+        <footer class="footer">
+            <a href="/" class="logo footer-item">
+                <img class="theme__light" src="img/logo.svg" alt="Logo">
+                <img src="img/logo_theme_dark.svg" alt="Logo" class="theme__dark">
+            </a>
+
+            <ul class="footer-menu footer-item">
+                <li><a href="">Новини</a></li>
+                <li><a href="">Прайс</a></li>
+                <li><a href="">База знань</a></li>
+                <li><a href="">Зв’язатися з нами</a></li>
+            </ul>
+
+            <div class="lang-switcher footer-item">
+                <div class="lang-current lang-item">
+                    <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                    <span class="lang-item-code">UA</span>
+                </div>
+                <div class="lang-list">
+                    <a href="" class="lang-item lang-current">
+                        <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </a>
+                    <a href="" class="lang-item">
+                        <img src="img/icons/usa.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">EN</span>
+                    </a>
+                    <a href="" class="lang-item">
+                        <img src="img/icons/ru.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="" class="telegram footer-item"><img src="img/icons/telegram.svg"></a>
+
+            <div class="footer-btns footer-item">
+                <a href="/register.html" class="btn btn-dark register-btn">Реєстрація</a>
+                <a href="/presentation.html" class="btn btn-transparent">Замовити презентацію</a>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="own wrap">© CRMate, 2024. Всі права захищені.</div>
+
+
+    <div class="mobile__bg"></div>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

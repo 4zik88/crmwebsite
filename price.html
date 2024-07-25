@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Price</title>
+</head>
+
+<body>
+
+
+
+    <div class="wrap header-wrap">
+        <div class="header">
+            <div class="header-body container wrap">
+
+                <a href="/" class="logo">
+                    <img class="theme__light" src="img/logo.svg" alt="Logo">
+                    <img src="img/logo_theme_dark.svg" alt="Logo" class="theme__dark">
+                </a>
+                <div class="theme-switcher">
+                    <div class="theme-switcher-item theme-light-item active" data-theme="light"><img
+                            src="img/icons/sun.svg"></div>
+                    <div class="theme-switcher-item theme-dark-item" data-theme="dark"><img src="img/icons/moon.svg">
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="/price.html">Прайс</a></li>
+                        <li class="dropdown">
+                            <a href="">Новини</a>
+                            <ul class="submenu">
+                                <li><a href="/blog.html">
+                                        <img src="img/icons/blog.svg" class="item__icon">
+                                        <span class="text">Блог</span></a></li>
+                                <li><a href="/update.html">
+                                        <img src="img/icons/update.svg" class="item__icon">
+                                        <span class="text">Оновлення</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">База знань</a>
+                            <ul class="submenu">
+                                <li><a href="/advice.html">
+                                        <img src="img/icons/advice.svg" class="item__icon">
+                                        <span class="text">Поради та документація</span></a></li>
+                                <li><a href="/api.html">
+                                        <img src="img/icons/api.svg" class="item__icon">
+                                        <span class="text">API Doc</span></a>
+                                </li>
+                                <li><a href="/program.html">
+                                        <img src="img/icons/money.svg" class="item__icon">
+                                        <span class="text">Реферальна програма</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/contacts.html">Зв’язатися з нами</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <div class="lang-current lang-item">
+                        <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </div>
+                    <div class="lang-list">
+                        <a href="" class="lang-item lang-current">
+                            <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">UA</span>
+                        </a>
+                        <a href="" class="lang-item">
+                            <img src="img/icons/usa.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">EN</span>
+                        </a>
+                        <a href="" class="lang-item">
+                            <img src="img/icons/ru.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">UA</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/register.html" class="btn btn-dark register-btn">Реєстрація</a>
+
+                <div class="mobile-btn"></div>
+
+            </div> <!-- header-body -->
+
+            <!-- mobile menu -->
+            <div class="mobile-wrap">
+                <div class="mobile-body">
+                    <nav class="nav mobile-nav">
+                        <ul class="mobile-menu menu">
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li class="dropdown">
+                                <a href="">Новини</a>
+                                <ul class="submenu">
+                                    <li><a href="/blog.html">
+                                            <img src="img/icons/blog.svg" class="item__icon">
+                                            <span class="text">Блог</span></a></li>
+                                    <li><a href="/update.html">
+                                            <img src="img/icons/update.svg" class="item__icon">
+                                            <span class="text">Оновлення</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="">База знань</a>
+                                <ul class="submenu">
+                                    <li><a href="/advice.html">
+                                            <img src="img/icons/advice.svg" class="item__icon">
+                                            <span class="text">Поради та документація</span></a></li>
+                                    <li><a href="/api.html">
+                                            <img src="img/icons/api.svg" class="item__icon">
+                                            <span class="text">API Doc</span></a>
+                                    </li>
+                                    <li><a href="/program.html">
+                                            <img src="img/icons/money.svg" class="item__icon">
+                                            <span class="text">Реферальна програма</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/contacts.html">Зв’язатися з нами</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- mobile-wrap -->
+            <!-- mobile menu -->
+
+        </div><!-- header -->
+    </div> <!-- wrap -->
+
+
+    <div class="breadcrumbs-container">
+        <div class="breadcrumbs wrap container">
+            <ul>
+                <li><a href="">Головна</a></li>
+                <li>Прайс</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="page-title price-page-title wrap">
+        <h1>Тарифи</h1>
+        <div class="page-desc">Невеличкий оферний текст, котрий спонукає користувача обрати оптимальний тарифний план
+        </div>
+    </div>
+
+    <div class="price section">
+        <div class="price-tab-titles">
+            <div class="titles__wrap">
+                <div class="price-tab-title active" data-tab="1" data-discount="0">
+                    <div class="inner">Щомісяця</div>
+                </div>
+                <div class="price-tab-title" data-tab="2" data-discount="10">
+                    <div class="inner">3 місяці <span>-10%</span></div>
+                </div>
+                <div class="price-tab-title" data-tab="3" data-discount="20">
+                    <div class="inner">6 місяців <span>-20%</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="price-tab-items">
+
+            <div class="dark-theme-element"></div>
+
+            <div class="price-tab-item">
+                <div class="inner">
+                    <div class="price-item-title">Solo</div>
+                    <div class="item__price">
+                        <span class="currency">&#8364;</span>
+                        <div class="num" data-price="169">169</div>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                    </ul>
+                    <div class="price-item-btn btn btn-dark">Обрати тариф</div>
+                </div>
+            </div>
+
+            <div class="price-tab-item">
+                <div class="inner">
+                    <div class="price-item-title">Team</div>
+                    <div class="item__price">
+                        <span class="currency">&#8364;</span>
+                        <div class="num" data-price="270">270</div>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</li>
+                    </ul>
+                    <div class="price-item-btn btn btn-dark">Обрати тариф</div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- price -->
+
+    <div class="quest section wrap">
+        <div class="block-title">Часті питання</div>
+        <div class="quest-body">
+
+            <div class="quest-item">
+                <div class="quest-item-title">Скільки коштує користування CRMate?</div>
+                <div class="quest-item-answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                </div>
+            </div>
+            <div class="quest-item">
+                <div class="quest-item-title">Скільки коштує користування CRMate?</div>
+                <div class="quest-item-answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                </div>
+            </div>
+            <div class="quest-item">
+                <div class="quest-item-title">Скільки коштує користування CRMate?</div>
+                <div class="quest-item-answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- quest -->
+
+
+    <div class="now section wrap">
+        <div class="now-body">
+            <div class="now-content">
+                <div class="block-title">Користуйтесь CRMate <span class="green">вже зараз!</span></div>
+                <div class="now-desc">Або <span>зверніться</span> до нас з будь-якими питаннями!</div>
+                <div class="offer-btns row-btns">
+                    <a href="/register.html" class="btn btn-dark register-btn">Реєстрація</a>
+                    <a href="/presentation.html" class="btn btn-transparent">Замовити презентацію</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- now -->
+
+
+
+
+
+    <div class="wrap container">
+        <footer class="footer">
+            <a href="/" class="logo footer-item">
+                <img class="theme__light" src="img/logo.svg" alt="Logo">
+                <img src="img/logo_theme_dark.svg" alt="Logo" class="theme__dark">
+            </a>
+
+            <ul class="footer-menu footer-item">
+                <li><a href="">Новини</a></li>
+                <li><a href="">Прайс</a></li>
+                <li><a href="">База знань</a></li>
+                <li><a href="">Зв’язатися з нами</a></li>
+            </ul>
+
+            <div class="lang-switcher footer-item">
+                <div class="lang-current lang-item">
+                    <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                    <span class="lang-item-code">UA</span>
+                </div>
+                <div class="lang-list">
+                    <a href="" class="lang-item lang-current">
+                        <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </a>
+                    <a href="" class="lang-item">
+                        <img src="img/icons/usa.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">EN</span>
+                    </a>
+                    <a href="" class="lang-item">
+                        <img src="img/icons/ru.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="" class="telegram footer-item"><img src="img/icons/telegram.svg"></a>
+
+            <div class="footer-btns footer-item">
+                <a href="/register.html" class="btn btn-dark register-btn">Реєстрація</a>
+                <a href="/presentation.html" class="btn btn-transparent">Замовити презентацію</a>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="own wrap">© CRMate, 2024. Всі права захищені.</div>
+
+
+    <div class="mobile__bg"></div>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

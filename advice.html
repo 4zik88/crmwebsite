@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Advice</title>
+</head>
+
+<body>
+
+
+
+    <div class="wrap header-wrap">
+        <div class="header">
+            <div class="header-body container wrap">
+
+                <a href="/" class="logo">
+                    <img class="theme__light" src="img/logo.svg" alt="Logo">
+                    <img src="img/logo_theme_dark.svg" alt="Logo" class="theme__dark">
+                </a>
+                <div class="theme-switcher">
+                    <div class="theme-switcher-item theme-light-item active" data-theme="light"><img
+                            src="img/icons/sun.svg"></div>
+                    <div class="theme-switcher-item theme-dark-item" data-theme="dark"><img src="img/icons/moon.svg">
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="/price.html">Прайс</a></li>
+                        <li class="dropdown">
+                            <a href="">Новини</a>
+                            <ul class="submenu">
+                                <li><a href="/blog.html">
+                                        <img src="img/icons/blog.svg" class="item__icon">
+                                        <span class="text">Блог</span></a></li>
+                                <li><a href="/update.html">
+                                        <img src="img/icons/update.svg" class="item__icon">
+                                        <span class="text">Оновлення</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">База знань</a>
+                            <ul class="submenu">
+                                <li><a href="/advice.html">
+                                        <img src="img/icons/advice.svg" class="item__icon">
+                                        <span class="text">Поради та документація</span></a></li>
+                                <li><a href="/api.html">
+                                        <img src="img/icons/api.svg" class="item__icon">
+                                        <span class="text">API Doc</span></a>
+                                </li>
+                                <li><a href="/program.html">
+                                        <img src="img/icons/money.svg" class="item__icon">
+                                        <span class="text">Реферальна програма</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/contacts.html">Зв’язатися з нами</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <div class="lang-current lang-item">
+                        <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </div>
+                    <div class="lang-list">
+                        <a href="" class="lang-item lang-current">
+                            <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">UA</span>
+                        </a>
+                        <a href="" class="lang-item">
+                            <img src="img/icons/usa.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">EN</span>
+                        </a>
+                        <a href="" class="lang-item">
+                            <img src="img/icons/ru.png" alt="current-language" class="lang-item-icon">
+                            <span class="lang-item-code">UA</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/register.html" class="btn btn-dark register-btn">Реєстрація</a>
+
+                <div class="mobile-btn"></div>
+
+            </div> <!-- header-body -->
+
+            <!-- mobile menu -->
+            <div class="mobile-wrap">
+                <div class="mobile-body">
+                    <nav class="nav mobile-nav">
+                        <ul class="mobile-menu menu">
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li class="dropdown">
+                                <a href="">Новини</a>
+                                <ul class="submenu">
+                                    <li><a href="/blog.html">
+                                            <img src="img/icons/blog.svg" class="item__icon">
+                                            <span class="text">Блог</span></a></li>
+                                    <li><a href="/update.html">
+                                            <img src="img/icons/update.svg" class="item__icon">
+                                            <span class="text">Оновлення</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="">База знань</a>
+                                <ul class="submenu">
+                                    <li><a href="/advice.html">
+                                            <img src="img/icons/advice.svg" class="item__icon">
+                                            <span class="text">Поради та документація</span></a></li>
+                                    <li><a href="/api.html">
+                                            <img src="img/icons/api.svg" class="item__icon">
+                                            <span class="text">API Doc</span></a>
+                                    </li>
+                                    <li><a href="/program.html">
+                                            <img src="img/icons/money.svg" class="item__icon">
+                                            <span class="text">Реферальна програма</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/contacts.html">Зв’язатися з нами</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- mobile-wrap -->
+            <!-- mobile menu -->
+
+        </div><!-- header -->
+    </div> <!-- wrap -->
+
+
+    <div class="breadcrumbs-container">
+        <div class="breadcrumbs wrap container">
+            <ul>
+                <li><a href="">Головна</a></li>
+                <li>Прайс</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="advice section wrap container">
+
+
+        <div class="advice-row">
+
+            <div class="advice-nav">
+                <div class="advice-nav-inner">
+                    <div class="mobile__title">Навігація</div>
+                    <div class="advice-nav-content">
+                        <ul class="advice-nav-list">
+                            <li><a href="">Розподіл трафіку та налаштування Campaign</a></li>
+                            <li><a href="">Інтеграція стороннього вебмастера</a></li>
+                            <li class="dropdown">
+                                <a href="">Розділи CRM</a>
+                                <ul class="submenu">
+                                    <li><a href="">Dashboard</a></li>
+                                    <li><a href="">Caps</a></li>
+                                    <li><a href="">Statistic</a></li>
+                                    <li class="has-children">
+                                        <a href="">Leads</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Перенадсилання ліда</a></li>
+                                            <li><a href="">Параметри ліда</a></li>
+                                            <li><a href="">Масове редагування лідів</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Експорт лідів</a></li>
+                            <li><a href="">Імпорт лідів</a></li>
+                            <li><a href="">Перевірка причини непередачі ліда по Offers</a></li>
+                            <li><a href="">Експорт лідів</a></li>
+                            <li><a href="">Імпорт лідів</a></li>
+                            <li><a href="">Експорт лідів</a></li>
+                            <li><a href="">Імпорт лідів</a></li>
+                            <li><a href="">Експорт лідів</a></li>
+                            <li><a href="">Імпорт лідів</a></li>
+                            <li><a href="">Експорт лідів</a></li>
+                            <li><a href="">Імпорт лідів</a></li>
+                            <li><a href="">Експорт лідів</a></li>
+                            <li><a href="">Імпорт лідів END</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- advice-nav -->
+
+            <div class="advice-content">
+
+                <div class="advice-content-inner">
+
+                    <div class="page-title">
+                        <h1>Документи та поради</h1>
+                        <div class="page-desc">
+                            Невеличкий текст, котрий коротко описує контент на сторінці та як ним користуватися
+                        </div>
+                    </div>
+
+                    <h2 class="advice-subtitle">
+                        Розподіл трафіку та налаштування Campaign
+                    </h2>
+                    <p>
+                        Перед тем как интегрироваться с CRM (будь то ваш личный лендинг, кейтаро или сторонний
+                        вебмастер)
+                        важно
+                        понимать как
+                        работает распределение трафика между Кампаниями (офферами).
+                    </p>
+                    <p>
+                        Лид который попадает в нашу систему имеет множество разных параметров среди которых нас в первую
+                        очередь
+                        интересуют:
+                    </p>
+                    <ul>
+                        <li>1. landing_name - funnels, важно чтобы значение в лиде и значение по которому вы открываете
+                            доступ в
+                            кампании (см. скрин
+                            ниже) совпадали буква в букву (регистр значения не имеет). Если в лиде будет воронка TeslaX,
+                            а в
+                            компании открыто для
+                            Tesla_X, то лиды заходить не будут. </li>
+                        <li>
+                            2. country - страна в формате alpha-2 (система двухбуквенных кодов стран). Например: RU, KZ
+                        </li>
+                        <li>
+                            3. source - источник. Например если нужно разделить трафик по юзерам - называем именами
+                            юзеров,
+                            дальше используем
+                            настройках кампании. 
+                        </li>
+                    </ul>
+                    <p>По этим парметрах и происходит распределение между офферами.</p>
+                    <p>
+                        Важно не забывать что бы оффер был включен - без этого лиды будут попадать в вкладку Hold, а для
+                        вебмастера который
+                        отправил вам его этот лид будет отображаться как не принятый (“отбитый”).
+
+                        Если у вас одновременно включены несколько кампаний где стоят одинаковые параметры в настройках
+                        (речь
+                        снова о
+                        landing_name (Funnels), country и source) то система будет заполнять их поочередно.
+
+                        При настройке кампаний не менее важными являются капы:
+                    </p>
+                    <p>
+                        Важно не забывать что бы оффер был включен - без этого лиды будут попадать в вкладку Hold, а для
+                        вебмастера который
+                        отправил вам его этот лид будет отображаться как не принятый (“отбитый”).
+
+                        Если у вас одновременно включены несколько кампаний где стоят одинаковые параметры в настройках
+                        (речь
+                        снова о
+                        landing_name (Funnels), country и source) то система будет заполнять их поочередно.
+
+                        При настройке кампаний не менее важными являются капы:
+                    </p>
+                    <p>
+                        Важно не забывать что бы оффер был включен - без этого лиды будут попадать в вкладку Hold, а для
+                        вебмастера который
+                        отправил вам его этот лид будет отображаться как не принятый (“отбитый”).
+
+                        Если у вас одновременно включены несколько кампаний где стоят одинаковые параметры в настройках
+                        (речь
+                        снова о
+                        landing_name (Funnels), country и source) то система будет заполнять их поочередно.
+
+                        При настройке кампаний не менее важными являются капы:
+                    </p>
+
+                </div>
+
+            </div> <!-- advice-row -->
+
+        </div> <!-- advice-content-inner -->
+
+    </div> <!-- advice -->
+
+
+
+
+    <div class="wrap footer-wrap">
+        <footer class="footer container">
+            <a href="/" class="logo footer-item">
+                <img class="theme__light" src="img/logo.svg" alt="Logo">
+                <img src="img/logo_theme_dark.svg" alt="Logo" class="theme__dark">
+            </a>
+
+            <ul class="footer-menu footer-item">
+                <li><a href="">Новини</a></li>
+                <li><a href="">Прайс</a></li>
+                <li><a href="">База знань</a></li>
+                <li><a href="">Зв’язатися з нами</a></li>
+            </ul>
+
+            <div class="lang-switcher footer-item">
+                <div class="lang-current lang-item">
+                    <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                    <span class="lang-item-code">UA</span>
+                </div>
+                <div class="lang-list">
+                    <a href="" class="lang-item lang-current">
+                        <img src="img/icons/ua.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </a>
+                    <a href="" class="lang-item">
+                        <img src="img/icons/usa.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">EN</span>
+                    </a>
+                    <a href="" class="lang-item">
+                        <img src="img/icons/ru.png" alt="current-language" class="lang-item-icon">
+                        <span class="lang-item-code">UA</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="" class="telegram footer-item"><img src="img/icons/telegram.svg"></a>
+
+            <div class="footer-btns footer-item">
+                <a href="/register.html" class="btn btn-dark register-btn">Реєстрація</a>
+                <a href="/presentation.html" class="btn btn-transparent">Замовити презентацію</a>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="own wrap">© CRMate, 2024. Всі права захищені.</div>
+
+
+
+    <div class="mobile__bg"></div>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
