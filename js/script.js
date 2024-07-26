@@ -201,26 +201,26 @@ $(document).ready(function () {
     let coord = document.querySelector('.advice-nav-inner').getBoundingClientRect();
     let nav = document.querySelector('.advice-nav').getBoundingClientRect();
     
-    if(width > 900){
+    // if(width > 900){
 
-        if(Math.floor(coord.top) == Math.floor(nav.top) && coord.top < 0 && nav.top < 0){
-         $('.advice-nav-inner').addClass('fixed');
-        }
+    //     if(Math.floor(coord.top) == Math.floor(nav.top) && coord.top < 0 && nav.top < 0){
+    //      $('.advice-nav-inner').addClass('fixed');
+    //     }
 
-        if(coord.top >= 0 && nav.top > 0){
-            $('.advice-nav-inner').removeClass('fixed');
-        }
+    //     if(coord.top >= 0 && nav.top > 0){
+    //         $('.advice-nav-inner').removeClass('fixed');
+    //     }
 
-        if(coord.bottom >= nav.bottom){
-            $('.advice-nav-inner').removeClass('fixed');
-            $('.advice-nav-inner').addClass('static');
-        }
+    //     if(coord.bottom >= nav.bottom){
+    //         $('.advice-nav-inner').removeClass('fixed');
+    //         $('.advice-nav-inner').addClass('static');
+    //     }
 
-        if(Math.floor(coord.bottom) == Math.floor(nav.bottom)  && coord.top > 0){
-            $('.advice-nav-inner').addClass('fixed');
-            $('.advice-nav-inner').removeClass('static');
-        }
-    }
+    //     if(Math.floor(coord.bottom) == Math.floor(nav.bottom)  && coord.top > 0){
+    //         $('.advice-nav-inner').addClass('fixed');
+    //         $('.advice-nav-inner').removeClass('static');
+    //     }
+    // }
 
    })
 
