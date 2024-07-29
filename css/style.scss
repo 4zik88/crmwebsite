@@ -1237,7 +1237,10 @@ body.dark {
   .register-btn {
     max-width: 335px;
     width: 100%;
-    margin: 0 auto;
+    
+    @media screen and (max-width: 767px) {
+      margin: 0 auto;
+    }
   }
 
 }
