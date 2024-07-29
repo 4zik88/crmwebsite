@@ -1025,6 +1025,7 @@ body.dark .offer-arrow {
 .slide .register-btn {
   max-width: 335px;
   width: 100%;
+  margin: 0 auto;
 }
 
 body .slick-prev {
